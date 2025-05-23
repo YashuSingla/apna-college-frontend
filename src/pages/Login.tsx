@@ -13,6 +13,7 @@ export default function Login() {
   useEffect(() => {
     const checkLogin = async () => {
       const token = getToken();
+      
       if (token) {
         try {
           const user = await getUser();
